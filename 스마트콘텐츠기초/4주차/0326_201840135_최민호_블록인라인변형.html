@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+    <style>
+        h1,ul,li,dl,dt,dd,div,p,table,tr,td,span,a,img,input,button {
+            margin: 0px; padding: 0px; 
+            font-size: 15px; font-family: "맑은 고딕", sans-serif; color: #333;
+        }
+        h1 {
+            font-size: 30px;color: rgb(207, 90, 90);
+        }
+        li {
+            list-style: none;
+        }
+        table , td{
+            border: 1px solid red;
+            border-collapse:collapse;
+        }
+        span{
+            padding: 10px 20px 15px; background-color: yellow; margin:10px; 
+        }
+        button{padding: 10px; background-color: turquoise; color: tomato; font-weight: bold; border:1px solid rgba(0,0,0,0.7) }
+        a {
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;color: red;font-weight: bold;
+        }
+        ul#gnb.nav{
+            border: 1px solid #ccc;
+        }
+        .nav li{
+            float: left;
+        }
+        section{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- 블록 레벨 -->
+<header>
+    <div>
+        <h1>로고</h1>
+        
+        <ul id="gnb" class="nav">
+            <li>메뉴1</li>
+           <li>메뉴2</li>
+             <li>메뉴3</li>
+             <li>메뉴4</li>
+            <li>메뉴5</li>
+                </ul>
+            
+        </div>
+</header>
+<section class="content">
+     <p>가나다라마바사 가나다라마바사 가나다라마바사...</p>
+     <dl>
+         <dt>타이틀을 씁니다</dt>
+         <dd>설명글을 씁니다. 설명글을 씁니다. 설명글을 씁니다.</dd>
+         <dd>설명글을 씁니다</dd>
+    </dl>
+
+    <table>
+       <tr>
+          <td>안녕하세</td>
+          <td>안녕하세</td>
+      </tr>
+      <tr>
+         <td>안녕하세</td>
+         <td>안녕하세</td>
+      </tr>
+     </table> 
+       <!-- 인라인 레벨 -->
+        <div>
+            <span>피자</span><span>우동</span><span>치킨</span>
+            <a href="#" title="날짜">오늘은 금요일</a>
+            <img src="img.jpg" alt="배경이미지" style="width: 200px; height: 200px;">
+            <input type="text" name="" id="">
+            <button>바로가기</button>
+        </div>
+</section>
+<footer>사이트 정보 영역 </footer>
+</body>
+</html>
